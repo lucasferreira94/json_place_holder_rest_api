@@ -42,6 +42,7 @@ func main() {
 	writer := csv.NewWriter(csvFile)
 
 	// Loop para iterar sobre os dados da resposta dentro do slice "todos"
+	// A variável "row" irá armazenar os dados da API em uma linha para ser escrita dentro do arquivo CSV
 	// Converter os dados a API para string e fazer o append dentro do slice row
 	// Escrever no arquivo CSV
 	for _, todo := range todos {
